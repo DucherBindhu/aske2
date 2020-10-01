@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\EvenementsRepository;
+use App\Repository\EvenementRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=EvenementsRepository::class)
+ * @ORM\Entity(repositoryClass=EvenementRepository::class)
  */
-class Evenements
+class Evenement
 {
     /**
      * @ORM\Id
@@ -23,12 +23,12 @@ class Evenements
     private $titre;
 
     /**
-     * @ORM\Column(type="string", length=200)
+     * @ORM\Column(type="string", length=255)
      */
     private $description;
 
     /**
-     * @ORM\Column(type="date")
+     * @ORM\Column(type="date", nullable=true)
      */
     private $date;
 
