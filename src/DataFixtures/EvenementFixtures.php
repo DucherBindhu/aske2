@@ -41,7 +41,7 @@ class EvenementFixtures extends Fixture
         ],
         [
             'titre' => 'ROTTERDAM',
-            'date' =>'15/08/2005',
+            'date' =>'15/08/2019',
             'image'=> 'images/7_ROTTERDAM_Nederland2019.jpg'
         ],
     ];

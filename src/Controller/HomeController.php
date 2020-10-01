@@ -14,11 +14,11 @@ class HomeController extends AbstractController
      */
     public function index(EvenementRepository $evenementRepository)
     {
-        $evenement = $evenementRepository->findAll();
+        $evenements = $evenementRepository->findAll();
         $newsletterForm = $this->createForm(NewsletterType::class);
         return $this->render('home/home.html.twig', [
             'controller_name' => 'aske',
-            'evenement' =>$evenement,
+            'evenements' =>$evenements,
             'form_newsletter' => $newsletterForm->createView()
         ]);
     }
