@@ -35,7 +35,7 @@ class Juges
     private $description;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="text", length=255)
      */
     private $image;
     /**

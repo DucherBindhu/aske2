@@ -14,7 +14,7 @@ class JugesController extends AbstractController
     public function index(Juges $juges)
     {
         return $this->render('juges/index.html.twig', [
-            'controller_name' => $juges,
+            'juges' => $juges,
         ]);
     }
 }
