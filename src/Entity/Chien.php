@@ -37,6 +37,11 @@ class Chien
      */
     private $category;
 
+    /**
+     * @ORM\Column(type="json", length=100)
+     */
+    private $epreuve;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +91,18 @@ class Chien
     public function setCategory(string $category): self
     {
         $this->category = $category;
+
+        return $this;
+    }
+
+    public function getEpreuve(): ?array
+    {
+        return $this->epreuve;
+    }
+
+    public function setEpreuve(array $epreuve): self
+    {
+        $this->epreuve = $epreuve;
 
         return $this;
     }

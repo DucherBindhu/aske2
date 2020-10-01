@@ -1,0 +1,175 @@
+{% extends 'base.html.twig' %}
+
+{% block banniere %}
+
+{% endblock %}
+
+{% block body %}
+<div id="baniere">
+
+    <h1 id="grnd-titre">AKSE 2021</h1>
+    <div id="container-count">
+        <p id="texte" >Venez participer à notre evenement AKSE le 29 juillet 2021 à PARIS</p>
+
+        <div class="countdown">
+            <div id="days">00</div>
+            <div id="hours">00</div>
+            <div id="minutes">00</div>
+            <div id="seconds">00</div>
+        </div>
+        {{ form_start(form_newsletter,  {attr: {id : 'form-newsletter', action: path('newsletter')}}) }}
+            <p id="text-newsletre">Recevez toutes les actualités en vous inscrivant à la newsletter</p>
+            <div id="email-box">
+
+                {{ form_widget(form_newsletter.email,{ attr: {class: 'tbox', placeholder: 'Entrez votre email'}}) }}
+                <button class="btn" type="submit" name="button">Envoyer</button>
+            </div>
+        {{ form_end(form_newsletter) }}
+    </div>
+</div>
+
+<section id="lieux">
+    <h2 class="text-center pt-5">Les lieux</h2>
+    <div id="container-lieux">
+        <article class="item-lieux">
+            <div class="icones"><i class="fas fa-bus" href="#"></i></div>
+            <h4>TRANSPORT</h4>
+            <p>Comment venir à notre événement canin</p>
+        </article>
+
+        <article class="item-lieux">
+            <div class="icones"><i class="fas fa-utensils" href="#"></i></div>
+            <h4>RESTAURANT</h4>
+            <p>Trouver un endroit ou manger un bon repas pendant l'événement</p>
+        </article>
+
+        <article class="item-lieux">
+            <div class="icones"><i class="fas fa-hotel" href="#"></i></div>
+            <h4>HOTEL</h4>
+            <p>Nous vous proposons les meilleurs hotel pour vous reposer apres l'effort</p>
+        </article>
+    </div>
+</section>
+    <div class="container" id="organisation">
+        <div class="timeline">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url({{ asset('images/1_BEMMEL_Nederland2013.png') }})" data-year="2013">
+                        <div class="swiper-slide-content"><span class="timeline-year">2013</span>
+                            <h4 class="timeline-title">BEMMEL </h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
+                                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url({{ asset('images/2_BEMMEL_Nederland2014.png') }})" data-year="2014">
+                        <div class="swiper-slide-content"><span class="timeline-year">2014</span>
+                            <h4 class="timeline-title">BEMMEL </h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
+                                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url({{ asset('images/3_BEMMEL_Nederland2015.png') }})" data-year="2015">
+                        <div class="swiper-slide-content"><span class="timeline-year">2015</span>
+                            <h3 class="timeline-title">BEMMEL </h3>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
+                                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url({{ asset('images/4_BEMMEL_Nederland2016.png') }})" data-year="2016">
+                        <div class="swiper-slide-content"><span class="timeline-year">2016</span>
+                            <h4 class="timeline-title">BEMMEL </h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
+                                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url({{ asset('images/5_BEMMEL_Nederland2017.png') }})" data-year="2017">
+                        <div class="swiper-slide-content"><span class="timeline-year">2017</span>
+                            <h4 class="timeline-title">BEMMEL</h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
+                                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url({{ asset('images/6_BEMMEL_Nederland2018.png') }})" data-year="2018">
+                        <div class="swiper-slide-content"><span class="timeline-year">2018</span>
+                            <h4 class="timeline-title">SAARBURG </h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
+                                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url({{ asset('images/7_BEMMEL_Nederland2019.png') }})" data-year="2019">
+                        <div class="swiper-slide-content"><span class="timeline-year">2019</span>
+                            <h4 class="timeline-title">ROTTERDAM</h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
+                                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url({{ asset('images/7_BEMMEL_Nederland2019.png') }})" data-year="2020">
+                        <div class="swiper-slide-content"><span class="timeline-year">2020</span>
+                            <h4 class="timeline-title">ROTTERDAM </h4>
+                            <p class="timeline-text"> AKSE 2020 Le Australian Kelpie Sports Event est organisé pour la 8e fois. Cette
+                                année, l'AKSE aura de nouveau lieu à Rotterdam, sur le terrain du KC Rotterdam. Du vendredi 10 au
+                                dimanche 13 juillet. L'AKSE est un week-end rempli de Kelpies sportifs. L'AKSE se compose d'un week-end
+                                de sports, notamment d'agilité. La compétition débute samedi
+                                pour la
+                                finale dimanche. Et comme toujours, il y a une compétition par équipe. En plus de la violence d'agilité,
+                                il y aura également Frisbee. De plus, il y aura à nouveau des ateliers et il y aura un certain nombre de
+                                beaux
+                                stands. C'est un week-end international pour et par Australian et Working Kelpies.
+                                .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <section>
+    <h2 id="juges">Juges</h2>
+    <div id="container-juges">
+        <article class="art-juges">
+            <img class="jury" src="{{ asset('images/SEMKAT.jpg') }}" alt="jury homme">
+            <h4>Pascal GERY</h4>
+            <p>63 ans. Acquisition de mon premier malinois en 1978 et engagement dans la cynophilie auprès de diverses instances (secrétaire puis trésorière d’un club d’éducation canine, secrétaire de l’Association Canine Territoriale de la Beauce puis membre du comité de celle de la Dordogne).</p>
+        </article>
+        <article class="art-juges">
+            <img class="jury" src="{{ asset('images/SEMKAT.jpg') }}" alt="jury femme">
+            <h4>MARIAM SEMKAT</h4>
+            <p>Elle a commencé à juger en 1987, et a eu l’honneur d’être choisie pour attribuer les premiers Challenge Certificates à la race Épagneul Breton à Crufts en 1997. Elle est également autorisée à attribuer des Challenge Certificates à 25 races du Gundog Group (groupes 7 et 8 de la FCI). Elle juge aussi les Groups 7 et 8 aux expositions de championnat. En 2009, elle a eu l’honneur de juger les Chiens d’Eau Irlandais à Crufts, puis des Welsh Springer Spaniels à Crufts en 2013.</p>
+        </article>
+        <article class="art-juges">
+            <img class="jury" src="{{ asset('images/SEMKAT.jpg') }}" alt="jury femme">
+            <h4>MARIAM SEMKAT</h4>
+            <p>Depuis 1991, je suis membre du C.I.M. – Club Italien de Molossoïdes, et depuis 2006, je suis le Président du même club.
+                Je suis membre de l’ENCI et du Groupe Cinofilo Partenopeo depuis 1977, Commissaire de Ring depuis 1996, délégué de l’ENCI depuis 2004, juge spécialiste du Mastiff Tibétain depuis 2006..</p>                </article>
+    </div>
+</section>
+<section>
+    <div id="container-galerie">
+        <h2 id="photo">GALERIE Photo</h2>
+        <div id="container-photo">
+            <a href="{{ asset('images/image1.jpg') }}" data-lightbox="galery" data-title="une image de toutou qui saute tres haut " class="link-img"><img class="img-small" src="{{ asset('images/image2.jpg') }}" alt="image"></a>
+            <a href="{{ asset('images/image2.jpg') }}" data-lightbox="galery"  data-title="" class="link-img"><img class="img-small" src="{{ asset('images/image3.jpg') }}" alt="image"></a>
+            <a href="{{ asset('images/image3.jpg') }}" data-lightbox="galery" data-title="" class="link-img"><img class="img-small" src="{{ asset('images/image4.jpg') }}" alt="image"></a>
+            <a href="{{ asset('images/image4.jpg') }}" data-lightbox="galery" data-title="" class="link-img"><img class="img-small" src="{{ asset('images/image5.jpg') }}" alt="image"></a>
+            <a href="{{ asset('images/image5.jpg') }}" data-lightbox="galery" data-title="" class="link-img"><img class="img-small" src="{{ asset('images/image6.jpg') }}" alt="image"></a>
+            <a href="{{ asset('images/image6.jpg') }}" data-lightbox="galery" data-title="" class="link-img"><img class="img-small" src="{{ asset('images/image7.jpg') }}" alt="image"></a>
+            <a href="{{ asset('images/image7.jpg') }}" data-lightbox="galery" data-title="" class="link-img"><img class="img-small" src="{{ asset('images/image8.jpg') }}" alt="image"></a>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

@@ -32,6 +32,11 @@ class Repas
      */
     private $participant;
 
+    /**
+     * @ORM\Column(type="json")
+     */
+    private $menu = [];
+
     public function getId(): ?int
     {
         return $this->id;
@@ -69,6 +74,18 @@ class Repas
     public function setParticipant(string $participant): self
     {
         $this->participant = $participant;
+
+        return $this;
+    }
+
+    public function getMenu(): ?array
+    {
+        return $this->menu;
+    }
+
+    public function setMenu(array $menu): self
+    {
+        $this->menu = $menu;
 
         return $this;
     }

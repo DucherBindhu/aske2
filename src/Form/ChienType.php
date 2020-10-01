@@ -5,6 +5,7 @@ namespace App\Form;
 use App\Entity\Chien;
 use Faker\Provider\Text;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -14,6 +15,17 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class ChienType extends AbstractType
 {
+    const CATEGORIES = [
+        'category A' => 'A',
+        'category B' => 'B',
+        'category C' => 'C',
+    ];
+    const EPREUVES = [
+        'EPREUVE 1 ' => 'epreuve 1 ',
+        'EPREUVE 2 ' => 'epreuve 2 ',
+        'EPREUVE 3 ' => 'epreuve 3 ',
+    ];
+
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
@@ -21,13 +33,11 @@ class ChienType extends AbstractType
             ->add('race',TextType::class,['label'=>'Race Du Chien'])
             ->add('licence',NumberType::class,['label'=>'No Licence'])
             ->add('category',ChoiceType::class,[
-                'choices'=> [
-                    'Epreuve 1' => 'epreuve_1',
-                    'Epreuve 2' => 'epreuve_2',
-                    'Epreuve 3' => 'epreuve_3',
-                ]
+                'choices'=> self::CATEGORIES
+
             ])
-            ->add('submit',SubmitType::class,['label'=>'Ajouter les Epreuves']);
+            ->add('epreuve',ChoiceType::class,['choices'=>self::EPREUVES,'multiple'=>true])
+            ->add('submit',SubmitType::class,['label'=>'Ajouter les Epreuves'])
         ;
     }
 

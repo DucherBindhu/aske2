@@ -10,7 +10,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95d86068-b649-4fdb-bd39-584d27f4ba4b" name="Default Changelist" comment="" />
+    <list default="true" id="95d86068-b649-4fdb-bd39-584d27f4ba4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/bgCountdowm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home/footer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home/header.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ChienController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ChienController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ChienFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ChienFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Chien.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Chien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Repas.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Repas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ChienType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ChienType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RepasType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RepasType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/UserAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/UserAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chien/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chien/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,15 +160,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/DataFixtures" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\binau\aske\templates" />
+      <recent name="C:\Users\binau\aske\templates\home" />
       <recent name="C:\Users\binau\aske\src\DataFixtures" />
       <recent name="C:\Users\binau\aske\src\Entity" />
       <recent name="C:\Users\binau\aske\config\packages" />
-      <recent name="C:\Users\binau\aske" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -160,7 +181,12 @@
       <option name="presentableId" value="Default" />
       <updated>1600856915579</updated>
       <workItem from="1600856949004" duration="23690000" />
-      <workItem from="1600955420165" duration="1675000" />
+      <workItem from="1600955420165" duration="2737000" />
+      <workItem from="1601018334575" duration="11911000" />
+      <workItem from="1601277175644" duration="20882000" />
+      <workItem from="1601363357438" duration="16521000" />
+      <workItem from="1601450976627" duration="1074000" />
+      <workItem from="1601455862436" duration="29581000" />
     </task>
     <servers />
   </component>
@@ -180,17 +206,25 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="453" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601537780266">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="453" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1601537780266" />
     <state x="147" y="92" key="#com.intellij.ide.util.MemberChooser" timestamp="1600943525198">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="147" y="92" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1600943525198" />
-    <state x="526" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600942328756">
+    <state x="526" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601385296123">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="526" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600942328756" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1600867374704">
+    <state x="526" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601385296123" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1601363577568">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600867374704" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601363577568" />
+    <state x="492" y="86" key="NewPhpClassDialog" timestamp="1600961185922">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1600961185922" />
   </component>
 </project>

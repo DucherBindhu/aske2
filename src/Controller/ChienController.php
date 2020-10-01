@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use App\Entity\Chien;
 use App\Form\ChienType;
+use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -21,10 +23,11 @@ class ChienController extends AbstractController
     }
     /**
      * @Route("/chien/form", name="chien")
+     * @IsGranted("IS_AUTHENTICATED_FULLY")
      */
 
 
-    public function chienForm(Request $request, Chien $chien = null)
+    public function chienForm(Request $request,EntityManagerInterface $manager,Chien $chien = null)
     {
         if ($chien === null) {
             $chien = new Chien();
@@ -35,8 +38,11 @@ class ChienController extends AbstractController
         $chienForm->handleRequest($request);
 
         if ($chienForm->isSubmitted() && $chienForm->isValid()) {
+            $manager->persist($chien);
+            $manager->flush();
 
         }
+
         return $this->render('chien/index.html.twig', [
             'chien_form' => $chienForm->createView(),
             'chien' => $chien

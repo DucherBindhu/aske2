@@ -3,5 +3,30 @@
 {% block title %}Ajouter chien{% endblock %}
 
 {% block body %}
-{{ form(chien_form) }}
+
+
+    <div class="container w-50 text-center">
+        <h1></h1>
+    </div>
+    <div class="container w-50 text-center border">
+        <h1>Ajouter Chien</h1>
+        {{ form_start(chien_form) }}
+        {{ form_row(chien_form.prenom,{label:'Prenom', attr: {class :'dog'} }) }}
+        {{ form_row(chien_form.race,{label:'Race' }) }}
+        {{ form_row(chien_form.licence,{label:'Licence' }) }}
+        {{ form_row(chien_form.category,{label:'Category' }) }}
+        {{ form_row(chien_form.epreuve,{label:'Epreuve' }) }}
+        <button type="submit" class="btn btn-warning">Ajouter Chien</button>
+
+    </div>
+    <div class="container w-50 pt-5">
+
+        <!--<p>
+            <a class="btn btn-warning" href="{{ path('competitor') }}">
+                Retour a competitor
+            </a>
+
+        </p>-->
+
+    </div>
 {% endblock %}
